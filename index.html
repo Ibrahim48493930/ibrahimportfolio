@@ -1,0 +1,507 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://kit.fontawesome.com/88276e542c.js" crossorigin="anonymous"></script>
+
+
+  <!-- ... -->
+</head>
+
+<body id="home" class="bg-gradient-to-r from-green-200 to-blue-300 ml-2 mr-2 ">
+  <!-- ... -->
+  <nav class=" bg-gradient-to-r from-green-400 to-blue-500 border-2 rounded-xl ">
+
+    <div class="hidden md:block">
+
+      <div class="flex justify-between items-center h-24 ">
+
+        <div class="grid grid-cols-5 lg:gap-x-4 md:gap-x-4 ml-4">
+          <a href="#" class="hover:text-white">Home</a>
+          <a href="#blogs" class="hover:text-white">Blogs</a>
+          <a href="#Services" class="hover:text-white">Services</a>
+          <a href="#portfolio" class="hover:text-white">Portfolio</a>
+          <a href="#Contact" class="hover:text-white">Contact</a>
+        </div>
+
+
+
+        <div>
+          <img src="image/LogoMakr-4fT483.png" alt="" class="h-20 w-20">
+        </div>
+
+
+        <div class="flex space-x-5 mr-4">
+          <a href="https://twitter.com/?lang=en" class="hover:text-white" target="_blank"><i
+              class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.facebook.com/mdibrahim.khalil.560272/" class="hover:text-white" target="_blank"><i
+              class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" class="hover:text-white" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/signup" class="hover:text-white" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="block md:hidden">
+      <div class="flex justify-between items-center h-24">
+
+        <div class="ml-4"><img src="image/new-sudo.png" alt="" class="h-20 w-20"></div>
+
+        <div class="mr-4">
+          <button onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+      </div>
+
+      <div class="hidden" id="mobileMenuContent">
+        <div class="flex flex-col ml-4 text-xl">
+          <a href="#" class="p-3 hover:text-white">Home</a>
+          <a href="#blogs" class="p-3 hover:text-white">Blogs</a>
+          <a href="#Services" class="p-3 hover:text-white">Services</a>
+          <a href="#portfolio" class="p-3 hover:text-white">Portfolio</a>
+          <a href="#Contact" class="p-3 hover:text-white">Contact</a>
+        </div>
+        <div class="flex ml-4 gap-x-4">
+          <a href="https://twitter.com/?lang=en" class="p-3 hover:text-white" target="_blank"><i
+              class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.facebook.com/mdibrahim.khalil.560272/" class="p-3 hover:text-white" target="_blank"><i
+              class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" class="p-3 hover:text-white" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/signup" class="p-3 hover:text-white" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="intro" class="bg-gradient-to-r from-green-400 to-blue-500  lg:p-10 md:p-5 rounded-xl">
+    <div class="grid md:grid-cols-2 sm:grid-cols-1 ">
+
+      <div id="intro-text"
+        class="flex flex-col justify-center align-middle lg:p-10 md:p-5 p-2 text-center md:text-left wow animate__animated animate__lightSpeedInLeft">
+
+        <h1 class="text-sm">Hello, I am</h1>
+        <h1 class="lg:text-6xl md:text-4xl text-3xl mt-1">Ibrahim Khalil</h1>
+        <h1 class="lg:text-4xl md:text-3xl text-2xl mt-4">UI/UX designer</h1>
+        <p class="md:mt-10 mt-6 text-sm">I can create new things and design. <br>I am passionate about my work and
+          always try to improve works.</p>
+
+        <div class="flex space-x-5 mt-4 space-x-5 justify-center md:justify-start ">
+          <a href="https://twitter.com/?lang=en" class="hover:text-white" target="_blank"><i
+              class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.facebook.com/mdibrahim.khalil.560272/" class="hover:text-white" target="_blank"><i
+              class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" class="hover:text-white" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/signup" class="hover:text-white" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+
+      </div>
+      <div id="intro-img"
+        class="flex flex-col justify-center align-middle lg:p-10 md:p-5 p-3  wow animate__animated animate__lightSpeedInRight">
+        <img src="image/undraw_on_the_office_fbfs.svg" alt="">
+      </div>
+
+    </div>
+  </section>
+
+  <section2 id="blogs" class="p-10">
+
+
+    <div class="mb-10 ml-2 ">
+      <h1 class="text-4xl text-center">Blogs</h1>
+    </div>
+
+    <div class="grid lg:grid-cols-5 md:grid-cols-3  gap-5">
+      <div class=" rounded-xl p-6 bg-green-400 wow animate__animated animate__zoomIn">
+        <img class="rounded-xl" src="image/blog1.jpg" alt="">
+        <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
+        <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
+        </p>
+      </div>
+
+      <div class="bg-pink-200 rounded-xl p-6 wow animate__animated animate__zoomIn">
+        <img class="rounded-xl" src="image/blog2.jpg" alt="">
+        <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
+        <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
+        </p>
+      </div>
+
+      <div class="bg-green-400 rounded-xl p-6 wow animate__animated animate__zoomIn">
+        <img class="rounded-xl" src="image/blog4.jpg" alt="">
+        <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
+        <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
+        </p>
+      </div>
+
+
+
+      <div class="bg-gray-200 rounded-xl p-6 wow animate__animated animate__zoomIn">
+        <img class="rounded-xl" src="image/blog5.jpg" alt="">
+        <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
+        <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
+        </p>
+      </div>
+
+      <div class="bg-yellow-300 rounded-xl p-6 wow animate__animated animate__zoomIn">
+        <img class="rounded-xl" src="image/blog3.jpg" alt="">
+        <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
+        <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
+        </p>
+      </div>
+
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 mt-24   rounded-xl bg-gradient-to-r from-green-400 to-blue-500 p-8">
+
+      <div class="wow animate__animated animate__lightSpeedInLeft">
+        <img src="image/blog6.jpg" alt="" class="rounded-xl">
+      </div>
+
+      <div
+        class="flex flex-col justify-center align-middle md:p-8 p-3 wow animate__animated animate__lightSpeedInRight">
+        <h1 class="text-4xl mt-5">SEO Tips and Tricks</h1>
+        <p class="text-sm mt-5">In this blog,you can learn how to improve your website search engine <br> optimizition
+          and got your website in top search</p>
+      </div>
+
+    </div>
+
+  </section2>
+
+  <section id="Services" class="bg-gradient-to-r from-green-400 to-blue-500    rounded-xl lg:p-10 md:p-5 p-2">
+    <div class="mb-10 ">
+      <h1 class="text-4xl text-center">Services</h1>
+    </div>
+
+    <div id="servicesmaingrid" class="grid md:grid-cols-2 gap-4">
+      <div id="1service" class="grid grid-cols-12 bg-white rounded-xl  wow animate__animated animate__slideInLeft">
+
+
+        <div id="icon" class="bg-green-600 col-span-2 flex justify-center place-items-center rounded-l-xl">
+          <i class="fas fa-laptop-code text-4xl text-white"></i>
+        </div>
+        <div id="servicedetails" class="px-3 py-5 col-span-10">
+          <h1 class="text-2xl">Web Designing</h1>
+          <p class="text-sm mt-3"> Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!! </p>
+        </div>
+
+
+      </div>
+
+      <div id="2service" class="grid grid-cols-12 bg-white rounded-xl wow animate__animated animate__slideInRight">
+
+
+        <div id="icon" class="bg-green-600 col-span-2 flex justify-center place-items-center rounded-l-xl">
+          <i class="fas fa-server text-4xl text-white"></i>
+        </div>
+
+        <div id="servicedetails" class="px-3 py-5 col-span-10">
+          <h1 class="text-2xl">Web Devlopment</h1>
+          <p class="text-sm mt-3"> Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!! </p>
+        </div>
+
+
+      </div>
+
+      <div id="3service" class="grid grid-cols-12 bg-white rounded-xl wow animate__animated animate__slideInLeft">
+
+
+        <div id="icon" class="bg-green-600 col-span-2 flex justify-center place-items-center rounded-l-xl">
+          <i class="fas fa-palette  text-4xl text-white"></i>
+        </div>
+        <div id="servicedetails" class="px-3 py-5 col-span-10">
+          <h1 class="text-2xl">UI/UX</h1>
+          <p class="text-sm mt-3"> Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!! </p>
+        </div>
+
+
+      </div>
+      <div id="4service" class="grid grid-cols-12 bg-white rounded-xl wow animate__animated animate__slideInRight">
+
+
+        <div id="icon" class="bg-green-600 col-span-2 flex justify-center place-items-center rounded-l-xl">
+          <i class="fas fa-chart-pie text-4xl text-white"></i>
+        </div>
+        <div id="servicedetails" class="px-3 py-5 col-span-10">
+          <h1 class="text-2xl">Digital Marketing</h1>
+          <p class="text-sm mt-3"> Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!! </p>
+        </div>
+
+
+      </div>
+      <div id="5service" class="grid grid-cols-12 bg-white rounded-xl wow animate__animated animate__slideInLeft">
+
+
+        <div id="icon" class="bg-green-600 col-span-2 flex justify-center place-items-center rounded-l-xl">
+          <i class="far fa-lightbulb text-4xl text-white"></i>
+        </div>
+        <div id="servicedetails" class="px-3 py-5 col-span-10">
+          <h1 class="text-2xl">Logo Designing</h1>
+          <p class="text-sm mt-3"> Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!! </p>
+        </div>
+
+
+      </div>
+
+      <div id="6service" class="grid grid-cols-12 bg-white rounded-xl wow animate__animated animate__slideInRight">
+
+
+        <div id="icon" class="bg-green-600 col-span-2 flex justify-center place-items-center rounded-l-xl">
+          <i class="fa-brands fa-first-order-alt text-4xl text-white"></i>
+        </div>
+        <div id="servicedetails" class="px-3 py-5 col-span-10">
+          <h1 class="text-2xl">SEO</h1>
+          <p class="text-sm mt-3"> Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!! </p>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="portfolio" class="p-10 bg-gradient-to-r from-green-400 to-blue-500   rounded-xl my-4">
+    <div class="mb-10 ml-2 ">
+      <h1 class="text-4xl text-center">Portfolio</h1>
+    </div>
+
+
+
+
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="grid grid-cols-2 bg-white place-items-center ">
+
+              <div id="portfoliodetails" class="flex flex-col justify-center align-middle p-3 ml-20">
+                <h1 class="text-3xl">Freelancing Website</h1>
+                <p class="text-sm mt-2">Free resource that will help nderstand thecv designc process and improve theroi
+                  nderstand.</p>
+
+                <ul class="mt-8 text-sm ">
+                  <li><i class="fas fa-chevron-right"></i>HTML 5</li>
+                  <li><i class="fas fa-chevron-right"></i>CSS 3</li>
+                  <li><i class="fas fa-chevron-right"></i>Git/Github</li>
+                  <li><i class="fas fa-chevron-right"></i>Photoshop</li>
+                  <li><i class="fas fa-chevron-right"></i>Web Devlopment</li>
+                  <li class="mt-4"><button class="p-2 bg-blue-700 rounded text-white w-full ">Visit <i
+                        class="fas fa-paper-plane"></i></button></li>
+                </ul>
+
+
+              </div>
+
+              <div id="portfolioimage" class="p-3">
+                <img src="image/freelancer-portfolio-740-600.jpg" class="w-3/4 border-2 rounded-xl" alt="">
+              </div>
+
+
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="grid grid-cols-2 bg-white place-items-center">
+
+              <div id="portfoliodetails" class="flex flex-col justify-center align-middle p-3 ml-20">
+                <h1 class="text-3xl">Freelancing Website</h1>
+                <p class="text-sm mt-2">Free resource that will help nderstand thecv designc process and improve theroi
+                  nderstand.</p>
+
+                <ul class="mt-8 text-sm ">
+                  <li><i class="fas fa-chevron-right"></i>HTML 5</li>
+                  <li><i class="fas fa-chevron-right"></i>CSS 3</li>
+                  <li><i class="fas fa-chevron-right"></i>Git/Github</li>
+                  <li><i class="fas fa-chevron-right"></i>Photoshop</li>
+                  <li><i class="fas fa-chevron-right"></i>Web Devlopment</li>
+                  <li class="mt-4"><button class="p-2 bg-blue-700 rounded text-white w-full ">Visit <i
+                        class="fas fa-paper-plane"></i></button></li>
+                </ul>
+
+
+              </div>
+
+              <div id="portfolioimage" class="p-3">
+                <img src="image/main-home-740-600.jpg" class="w-3/4 border-2 rounded-xl" alt="">
+              </div>
+
+
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="grid grid-cols-2 bg-white place-items-center">
+
+              <div id="portfoliodetails" class="flex flex-col justify-center align-middle p-3 ml-20">
+                <h1 class="text-3xl">Freelancing Website</h1>
+                <p class="text-sm mt-2">Free resource that will help nderstand thecv designc process and improve theroi
+                  nderstand.</p>
+
+                <ul class="mt-8 text-sm ">
+                  <li><i class="fas fa-chevron-right"></i>HTML 5</li>
+                  <li><i class="fas fa-chevron-right"></i>CSS 3</li>
+                  <li><i class="fas fa-chevron-right"></i>Git/Github</li>
+                  <li><i class="fas fa-chevron-right"></i>Photoshop</li>
+                  <li><i class="fas fa-chevron-right"></i>Web Devlopment</li>
+                  <li class="mt-4"><button class="p-2 bg-blue-700 rounded text-white w-full ">Visit <i
+                        class="fas fa-paper-plane"></i></button></li>
+                </ul>
+
+
+              </div>
+
+              <div id="portfolioimage" class="p-3">
+                <img src="image/creative-agency-740-600.jpg" class="w-3/4 border-2 rounded-xl" alt="">
+              </div>
+
+
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="grid grid-cols-2 bg-white place-items-center">
+
+              <div id="portfoliodetails" class="flex flex-col justify-center align-middle p-3 ml-20">
+                <h1 class="text-3xl">Freelancing Website</h1>
+                <p class="text-sm mt-2">Free resource that will help nderstand thecv designc process and improve theroi
+                  nderstand.</p>
+
+                <ul class="mt-8 text-sm ">
+                  <li><i class="fas fa-chevron-right"></i>HTML 5</li>
+                  <li><i class="fas fa-chevron-right"></i>CSS 3</li>
+                  <li><i class="fas fa-chevron-right"></i>Git/Github</li>
+                  <li><i class="fas fa-chevron-right"></i>Photoshop</li>
+                  <li><i class="fas fa-chevron-right"></i>Web Devlopment</li>
+                  <li class="mt-4"><button class="p-2 bg-blue-700 rounded text-white w-full ">Visit <i
+                        class="fas fa-paper-plane"></i></button></li>
+                </ul>
+
+
+              </div>
+
+              <div id="portfolioimage" class="p-3">
+                <img src="image/digital-agency-740-600.jpg" class="w-3/4 border-2 rounded-xl" alt="">
+              </div>
+
+
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="grid grid-cols-2 bg-white place-items-center">
+
+              <div id="portfoliodetails" class="flex flex-col justify-center align-middle p-3 ml-20">
+                <h1 class="text-3xl">Freelancing Website</h1>
+                <p class="text-sm mt-2">Free resource that will help nderstand thecv designc process and improve theroi
+                  nderstand.</p>
+
+                <ul class="mt-8 text-sm ">
+                  <li><i class="fas fa-chevron-right"></i>HTML 5</li>
+                  <li><i class="fas fa-chevron-right"></i>CSS 3</li>
+                  <li><i class="fas fa-chevron-right"></i>Git/Github</li>
+                  <li><i class="fas fa-chevron-right"></i>Photoshop</li>
+                  <li><i class="fas fa-chevron-right"></i>Web Devlopment</li>
+                  <li class="mt-4"><button class="p-2 bg-blue-700 rounded text-white w-full ">Visit <i
+                        class="fas fa-paper-plane"></i></button></li>
+                </ul>
+
+
+              </div>
+
+              <div id="portfolioimage" class="p-3">
+                <img src="image/interactive-dark-740-600.jpg" class="w-3/4 border-2 rounded-xl" alt="">
+              </div>
+
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <footer id="Contact" class="text-center bg-gradient-to-r from-green-400 to-blue-500  p-14  rounded-xl my-4">
+    <i class="fa-solid fa-shield-cat text-black text-3xl hover:text-white"></i>
+    <h1 class="md:text-4xl text-2xl text-black my-4 wow animate__animated animate__lightSpeedInRight">
+      ik9030704@gmail.com</h1>
+    <h1 class="md:text-4xl text-2xl text-black my-4 wow animate__animated animate__lightSpeedInRight">01648493930</h1>
+
+
+
+    <div class="text-black my-10 md:text-3xl text-2xl  wow animate__animated animate__lightSpeedInLeft">
+      <a href="https://twitter.com/?lang=en" class="md:p-4 p-2 hover:text-white" target="_blank"><i
+          class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.facebook.com/mdibrahim.khalil.560272/" class="md:p-4 p-2 hover:text-white" target="_blank"><i
+          class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/" class="md:p-4 p-2 hover:text-white" target="_blank"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/signup" class="md:p-4 p-2 hover:text-white" target="_blank"><i
+          class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+
+    <h1 class="md:text-3xl text-2xl text-black my-4wow animate__animated animate__lightSpeedInLeft">Copyright By Md
+      Ibrahim Khalil</h1>
+  </footer>
+
+
+  <div class="fixed p-3 bottom-0 right-0">
+    <a href="#home" class="text-green-500 text-4xl hover:text-red-800 "><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+
+
+
+
+
+
+
+
+  <script>
+    function toggleMenu() {
+      const mobileMenuContent = document.getElementById('mobileMenuContent')
+      if (mobileMenuContent.getAttribute('class') === 'hidden') {
+        mobileMenuContent.setAttribute('class', 'block')
+      } else {
+        mobileMenuContent.setAttribute('class', 'hidden')
+      }
+    }
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('.splide').mount();
+      new WOW().init();
+
+    });
+  </script>
+
+  <script src="js/wow.min.js"></script>
+
+
+</body>
+
+</html>
